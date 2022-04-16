@@ -13,11 +13,8 @@ function App() {
   return (
     <div className="App">
       <img className='topRightImg' src={topRight} alt="" />
-      <div>
-        
-      </div>
       <FirstPage className={openSecondPage?'displayNone':'displayFlex'} setOpenSecondPage={setOpenSecondPage}/>
-      <SecondPage className={openSecondPage?'displayFlex':'displayNone'}/>
+      <SecondPage className={openSecondPage?'displayFlex':'displayNone'} />
       <img className='bottomLeftImg' src={leftBottom} alt="" />
     </div>
   );
