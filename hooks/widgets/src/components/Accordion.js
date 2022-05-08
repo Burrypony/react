@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 
 
@@ -6,6 +6,7 @@ const Accordion = ({items}) =>{
 
     const [activeIndex, setActiveIndex] = useState(null)
 
+    
 
     const onTitleClick = (index) =>{
         setActiveIndex(index)
